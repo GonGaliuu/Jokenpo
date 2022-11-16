@@ -82,6 +82,10 @@ body{
     margin: auto;
 }
 
+.conteudo__item--bg1:hover, .conteudo__item--bg2:hover, .conteudo__item--bg3:hover{
+    cursor: pointer;
+}
+
 .conteudo__item--imagens{
     margin: 2.25rem 2.25rem;
 
@@ -100,6 +104,10 @@ body{
     padding: 1rem 3rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
+}
+
+.regras:hover{
+    cursor: pointer;
 }
 
 .modal{

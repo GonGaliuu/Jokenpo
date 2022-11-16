@@ -1,13 +1,13 @@
 const abrirModal = document.getElementById('abrir_modal');
 abrirModal.addEventListener('click', ()=>{
-    const modal = document.createElement('div');
-    const modalTitle = document.createElement('div');
-    const modalTitleTitulo = document.createElement('div');
-    const modalTitleParagrafo = document.createElement('p');
-    const modalTitleImagem = document.createElement('img');
-    const modalImagem = document.createElement('div');
-    const modalImagemImagem = document.createElement('img');
-    modalTitleParagrafo.textContent = 'RULES';
+    var modal = document.createElement('div');
+    var modalTitle = document.createElement('div');
+    var modalTitleTitulo = document.createElement('div');
+    var modalTitleParagrafo = document.createElement('p');
+    var modalTitleImagem = document.createElement('img');
+    var modalImagem = document.createElement('div');
+    var modalImagemImagem = document.createElement('img');
+    modalTitleParagrafo.textContent = 'REGRAS!';
     modalTitleImagem.src = 'assets/img/icon-close.svg';
     modalTitleImagem.id = 'close-modal';
     modalImagemImagem.src = 'assets/img/image-rules.svg';
@@ -25,9 +25,14 @@ abrirModal.addEventListener('click', ()=>{
     modalTitleTitulo.appendChild(modalTitleParagrafo);
     modalTitleTitulo.appendChild(modalTitleImagem);
     modalImagem.appendChild(modalImagemImagem);
-})
-
-const fecharModal = document.getElementById('close-modal');
-fecharModal.addEventListener('click', ()=>{
-    alert('Sim')
+    const fecharModal = document.getElementById('close-modal');
+    fecharModal.addEventListener('click', ()=>{
+        document.body.removeChild(modal);
+        modal.removeChild(modalTitle);
+        modalTitle.removeChild(modalTitleTitulo);
+        modalTitle.removeChild(modalImagem);
+        modalTitleTitulo.removeChild(modalTitleParagrafo);
+        modalTitleTitulo.removeChild(modalTitleImagem);
+        modalImagem.removeChild(modalImagemImagem);
+    })
 })
