@@ -2,6 +2,8 @@ body{
     background: radial-gradient(#1F3756, #141539);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 .score{
@@ -71,6 +73,7 @@ body{
     background-image:  linear-gradient(hsl(349, 71%, 52%),hsl(349, 70%, 56%));
     border-radius: 200px;
     padding: 1.25rem;
+    margin: auto;
 }
 
 .conteudo__item{
@@ -103,7 +106,6 @@ body{
     color: white;
     padding: 1rem 3rem;
     margin-right: 2rem;
-    margin-bottom: 2rem;
 }
 
 .regras:hover{

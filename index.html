@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="assets/js/jogo.js"></script>
     <header class="score">
         <div class="score__titulo">
         </div>
@@ -18,18 +17,18 @@
             <span class="score__score--pontos">12</span>
         </div>
     </header>
-    <section class="conteudo">
-        <div class="conteudo__item--bg1">
+    <section class="conteudo" id="conteudo">
+        <div class="conteudo__item--bg1" id="papel">
             <div class="conteudo__item--1 conteudo__item">
                 <img src="assets/img/icon-paper.svg" alt="" class="conteudo__item--imagens">
             </div>
         </div>
-        <div class="conteudo__item--bg2">
+        <div class="conteudo__item--bg2" id="pedra">
             <div class="conteudo__item--2 conteudo__item">
                 <img src="assets/img/icon-rock.svg" alt="" class="conteudo__item--imagens">
             </div>
         </div>
-        <div class="conteudo__item--bg3">
+        <div class="conteudo__item--bg3" id="tesoura">
             <div class="conteudo__item--3 conteudo__item">
                 <img src="assets/img/icon-scissors.svg" alt="" class="conteudo__item--imagens">
             </div>
@@ -39,5 +38,6 @@
         <button class="regras" id="abrir_modal">Regras</button>
     </footer>
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/jogo.js"></script>
 </body>
 </html>
