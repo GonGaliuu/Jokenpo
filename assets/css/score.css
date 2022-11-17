@@ -1,0 +1,39 @@
+.score{
+    height: 9.5rem;
+    width: 43.75rem;
+    margin: 2.8rem auto 0 auto;
+    border: solid 4px #606E85;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+.score__titulo{
+    margin: auto 0 auto 1.25rem;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 6.25rem;
+
+}
+
+.score__score{
+    margin: auto 1.25rem auto 0;
+    width: 10rem;
+    height: 6.25rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+.score__score--titulo{
+    color: #2A46C0;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.score__score--pontos{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 3rem;
+}

@@ -1,0 +1,17 @@
+.footer{
+    display: inline;
+    float: right;
+}
+
+.regras{
+    border: solid .15rem #606E85;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 3rem;
+    margin-right: 2rem;
+}
+
+.regras:hover{
+    cursor: pointer;
+}
