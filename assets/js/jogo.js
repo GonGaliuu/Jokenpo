@@ -1,8 +1,17 @@
 var secao = document.getElementById('conteudo')
-var papel = document.getElementById('papel')
-var tesoura = document.getElementById('tesoura')
-var pedra = document.getElementById('pedra')
-var botaoperdeu = '<div class="play-again"><p class="play-again__text">Você perdeu!</p><button class="play-again__button" id="recomecar">Tentar novamente</button></div>'
+var pontuacao = document.getElementById('pontos')
+var pontos = 0
+pontuacao.textContent = pontos
+criarvariaveis()
+
+function criarvariaveis(){
+    papel = document.getElementById('papel')
+    tesoura = document.getElementById('tesoura')
+    pedra = document.getElementById('pedra')
+    clicar()
+}
+
+var botaoperdeu = '<div class="play-again"><p class="play-again__text">Você Perdeu!</p><button class="play-again__button" id="recomecar">Tentar novamente</button></div>'
 var botaoganhou = '<div class="play-again"><p class="play-again__text">Você Ganhou!</p><button class="play-again__button" id="recomecar">Tentar novamente</button></div>'
 var botaoempatou = '<div class="play-again"><p class="play-again__text">Empate!</p><button class="play-again__button" id="recomecar">Tentar novamente</button></div>'
 
@@ -11,9 +20,11 @@ function cliqueipapel(){
     var escolher = Math.round(Math.random() * 10)
     if(escolher % 3 == 0){
         secao.innerHTML = papel.outerHTML + botaoperdeu + tesoura.outerHTML
+        perdeu()
     }
     if(escolher % 3 == 1){
         secao.innerHTML = papel.outerHTML + botaoganhou + pedra.outerHTML
+        ganhou()
     }
     if(escolher % 3 == 2){
         secao.innerHTML = papel.outerHTML + botaoempatou + papel.outerHTML
@@ -28,9 +39,11 @@ function cliqueitesoura(){
     }
     if(escolher % 3 == 1){
         secao.innerHTML = tesoura.outerHTML + botaoperdeu + pedra.outerHTML
+        perdeu()
     }
     if(escolher % 3 == 2){
         secao.innerHTML = tesoura.outerHTML + botaoganhou + papel.outerHTML
+        ganhou()
     }
 }
 
@@ -39,18 +52,21 @@ function cliqueipedra(){
     var escolher = Math.round(Math.random() * 10)
     if(escolher % 3 == 0){
         secao.innerHTML = pedra.outerHTML + botaoganhou + tesoura.outerHTML
+        ganhou()
     }
     if(escolher % 3 == 1){
         secao.innerHTML = pedra.outerHTML + botaoempatou + pedra.outerHTML
     }
     if(escolher % 3 == 2){
         secao.innerHTML = pedra.outerHTML + botaoperdeu + papel.outerHTML
+        perdeu()
     }
 }
 
 function voltaraonormal(){
     secao.className = 'conteudo__1'
     secao.innerHTML = papel.outerHTML + pedra.outerHTML + tesoura.outerHTML
+    criarvariaveis()
 }
 
 
@@ -59,10 +75,33 @@ function botaocriado(){
     recomecar.addEventListener('click', voltaraonormal)
 }
 
-papel.addEventListener('click', ()=>{
+
+function clicar(){
+    papel.addEventListener('click', ()=>{
+    criarvariaveis()
     cliqueipapel()
     botaocriado()
-})
+    })
 
-tesoura.addEventListener('click', cliqueitesoura)
-pedra.addEventListener('click', cliqueipedra)
+    tesoura.addEventListener('click', ()=>{
+    cliqueitesoura()
+    botaocriado()
+    })
+    pedra.addEventListener('click', ()=>{
+    cliqueipedra()
+    botaocriado()
+    })
+}
+
+function ganhou(){
+    pontos = pontos + 1
+    pontuacao.textContent = pontos
+}
+
+function perdeu(){
+    pontos = pontos - 1
+    if(pontos < 0 ){
+        pontos = 0
+    }
+    pontuacao.textContent = pontos
+}

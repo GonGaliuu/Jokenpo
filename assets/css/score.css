@@ -18,11 +18,14 @@
 }
 
 .score__score{
-    margin: auto 1.25rem auto 0;
+    margin: auto 0 auto 0;
     width: 10rem;
     height: 6.25rem;
     background-color: #ffffff;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .score__score--titulo{
@@ -35,5 +38,4 @@
 .score__score--pontos{
     font-size: 3rem;
     font-weight: 700;
-    margin-left: 3rem;
 }
