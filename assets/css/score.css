@@ -18,7 +18,7 @@
 }
 
 .score__score{
-    margin: auto 0 auto 0;
+    margin: auto 1.25rem auto 0;
     width: 10rem;
     height: 6.25rem;
     background-color: #ffffff;
@@ -33,9 +33,11 @@
     text-align: center;
     margin-top: 0.5rem;
     font-size: 1.25rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .score__score--pontos{
     font-size: 3rem;
     font-weight: 700;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }

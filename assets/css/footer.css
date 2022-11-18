@@ -4,12 +4,17 @@
 }
 
 .regras{
+    font-family: 'Barlow Semi Condensed', sans-serif;
     border: solid .15rem #606E85;
     border-radius: 1rem;
     background-color: transparent;
     color: white;
     padding: 1rem 3rem;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
     margin-right: 2rem;
+    right: 0;
 }
 
 .regras:hover{

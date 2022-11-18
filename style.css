@@ -2,10 +2,10 @@
 @import url(assets/css/score.css);
 @import url(assets/css/conteudo.css);
 @import url(assets/css/footer.css);
+@import url(assets/css/status.css);
 body{
     background: radial-gradient(#1F3756, #141539);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 2.8rem);
 }

@@ -67,11 +67,17 @@
     font-size: 2.5rem;
     color: white;
 }
+
+.play-again__text{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 .play-again__button{
-    margin-top: .5rem;
+    margin-top: 2rem;
     width: 15rem;
     height: 50px;
     background-color: white;
     border: none;
     border-radius: .5rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
