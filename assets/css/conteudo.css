@@ -80,4 +80,5 @@
     border: none;
     border-radius: .5rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
 }
