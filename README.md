@@ -13,3 +13,5 @@ Aqui está o resultado ao final dos 6 dias:
 Fiquem à vontade para entrar em contato me contando a sua pontuação.
 
 Aprendi muito com o projeto e isso me motivou a aprender mais sobre JavaScript, pois só tinha o conhecimento do JavaScript direcionado ao FrontEnd.
+
+![image](https://user-images.githubusercontent.com/104292192/210566921-a86cd337-95cb-4bf7-80a5-e9954ed14645.png)
