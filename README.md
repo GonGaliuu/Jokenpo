@@ -19,7 +19,7 @@ Pronto! Agora você deve estar visualizando o website localmente no seu navegado
 
 ## Como usar:
 
-A página do projeto é a layout para criação/seleção de habilidades de um personagem para um jogo, onde você deve mudar as estatísticas para que o personagem tenha um balanceamento desejável.
+A página é uma web aplicação de um jogo, fique à vontade pra se divertir e me contar a sua pontuação por qualquer meio de contato.
 
 ## Contato
 
