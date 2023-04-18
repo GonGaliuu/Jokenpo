@@ -1,17 +1,32 @@
 # Jokenpo
 
-Fui desafiado a fazer este projeto em front-end em 6 dias, a ideia era fazer realmente somente a parte Front-End, porém no decorrer do projeto, senti que um projeto assim, merecia uma atenção especial e então fiz também toda a lógica do jogo.
+O projeto Jokenpo é um projeto de JavaScript, onde criei um jogo funcional utilizando a linguagem.
 
-O projeto foi pego do site Frontend Mentor, segue o link:
+## Pré Requisitos
+* Navegador
 
-  https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH
+## Instalação
 
-Aqui está o resultado ao final dos 6 dias:
+#### Clone o repositório:
+* Abra o terminal (ou prompt de comando) e execute o seguinte comando para clonar o repositório:
+* git@github.com:gabrielestefono/Jokenpo.git
+#### No terminal, vá para a pasta do projeto clonado:
+~~ cd Jokenpo
+#### Abra o arquivo index.html no navegador:
+Localize o arquivo index.html na pasta do projeto e abra-o em seu navegador favorito. Isso pode ser feito simplesmente arrastando o arquivo para uma nova janela do navegador ou abrindo o arquivo através do menu "Arquivo" do navegador.
 
-  https://gabrielestefono.github.io/Jokenpo/
+Pronto! Agora você deve estar visualizando o website localmente no seu navegador.
 
-Fiquem à vontade para entrar em contato me contando a sua pontuação.
+## Como usar:
 
-Aprendi muito com o projeto e isso me motivou a aprender mais sobre JavaScript, pois só tinha o conhecimento do JavaScript direcionado ao FrontEnd.
+A página do projeto é a layout para criação/seleção de habilidades de um personagem para um jogo, onde você deve mudar as estatísticas para que o personagem tenha um balanceamento desejável.
 
+## Contato
+
+email: gabrielestefono@hotmail.com
+
+## Link do deploy
+https://gabrielestefono.github.io/Jokenpo/
+
+## Screenshot
 ![image](https://user-images.githubusercontent.com/104292192/210566921-a86cd337-95cb-4bf7-80a5-e9954ed14645.png)
